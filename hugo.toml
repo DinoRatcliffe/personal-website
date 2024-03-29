@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Dino.AI'
+theme = 'dinoai'
+
+[markup]
+  [markup.highlight]
+    lineNos = true
+    noClasses = false
+  [markup.tableOfContents]
+    endLevel = 5
+    startLevel = 2

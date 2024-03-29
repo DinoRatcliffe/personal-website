@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'berkeley-mono';
+	src: url('/fonts/BerkeleyMono-Regular.woff2') format('woff2'),
+	       url('/fonts/BerkeleyMono-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'berkeley-mono';
+	src: url('/fonts/BerkeleyMono-Bold.woff2') format('woff2'),
+	       url('/fonts/BerkeleyMono-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'berkeley-mono';
+	src: url('/fonts/BerkeleyMono-BoldItalic.woff2') format('woff2'),
+	       url('/fonts/BerkeleyMono-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+    font-family: 'berkeley-mono';
+	src: url('/fonts/BerkeleyMono-Italic.woff2') format('woff2'),
+	       url('/fonts/BerkeleyMono-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+time {
+    font-family: 'berkeley-mono';
+}
+
+body {
+  counter-reset: figure 0;
+  background-color: var(--bg);
+  color: var(--text-colour);
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  text-align: justify;
+}
+
+code {
+    font-family: 'berkeley-mono', monospace;
+    font-size: 0.8em;
+    border-radis: 0.3em;
+    padding: 0em 0.2em 0.2em 0.2em;
+    background-color: var(--bg-highlight);
+    border: var(--bg-highlight) 0.1em solid;
+}
+
+main {
+    max-width: 768px;
+    margin: auto;
+    padding: 0em 2em;
+}
+
+main.menu-open-initial {
+    padding-top: 10em
+}
+
+@keyframes show-menu {
+    0% {
+        padding-top: 0.1em;
+    }
+    100%{
+        padding-top: 10em;
+    }
+}
+
+@keyframes hide-menu {
+    0% { padding-top: 10em; }
+    100% { padding-top: 0.1em; }
+}
+
+h1 {
+    text-align: left;
+}
+
+main h2 {
+    text-transform: uppercase;
+}
+main h3 {
+    text-transform: uppercase;
+}
+main h4 {
+    text-transform: uppercase;
+}
+main h2::after {
+    background-color: #be79ff;
+    content: "";
+    color: transparent;
+    height: 0.1em;
+    width: 1em;
+    display: block;
+}
+
+main.menu-open {
+    animation-duration: 0.8s;
+    animation-name: show-menu;
+    animation-fill-mode: forwards;
+}
+main.menu-close {
+    animation-duration: 0.8s;
+    animation-name: hide-menu;
+    animation-fill-mode: forwards;
+}
+
+header {
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+a {
+  color: #be79ff;
+  text-transform: uppercase;
+  font-family: 'berkeley-mono';
+  text-decoration: none;
+}
+
+a::before{
+    content: '[ ';
+    color: var(--mark-colour);
+}
+a::after{
+    content: ' ]';
+    color: var(--mark-colour);
+}
+a:hover::before{
+    color: #82cfff;
+    transition: color 0.4s;
+}
+a:hover::after{
+    color: #82cfff;
+    transition: color 0.4s;
+}
+
+ul {
+    margin-left : calc(var(--radius) - var(--spacing));
+    padding-left : 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+li::marker {
+    font-family: 'berkeley-mono';
+    color: #8d8d8d;
+}
+
+
+#TableOfContents li::marker {
+    content: ""
+}
+#TableOfContents li {
+    --spacing : 2.3em;
+    --radius  : 10px;
+    border-left : 2px solid var(--mark-colour);
+    display      : block;
+    position     : relative;
+    padding-left : calc(2 * var(--spacing) - var(--radius));
+}
+#TableOfContents li:last-child{
+    border-color : transparent; 
+}
+
+#TableOfContents li a {
+    margin-left: -1em;
+}
+
+#TableOfContents li::before{ 
+      content      : '';
+      display      : block;
+      position     : absolute;
+      top          : calc(var(--spacing) / -1.4);
+      left         : -2px;
+      width        : calc(var(--spacing) + 2px);
+      height       : calc(var(--spacing) + 2px);
+      border       : solid var(--mark-colour);
+      border-width : 0 0 2px 2px;
+}
+
+#TableOfContents {
+    margin-left: -0.35em;
+    margin-top: -1em;
+}
+
+@media screen and (max-width: 900px) {
+    #TableOfContents li a {
+        font-size: 1.5em;
+    }
+}
+
+figure a.no-decoration::before {
+    content:""
+}
+figure a.no-decoration::after {
+    content:""
+}
+figure {
+    font-family: 'berkeley-mono';
+    padding: 1em;
+    margin: 0;
+    background-color: var(--bg-highlight);
+}
+
+figure img {
+    margin: auto;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+figcaption::before {
+    counter-increment: figure;
+    content: "Figure " counter(figure) ": ";
+}

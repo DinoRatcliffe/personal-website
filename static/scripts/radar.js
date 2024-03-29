@@ -1,0 +1,2 @@
+class DinoAIRadarCart extends HTMLElement {
+}
