@@ -33,7 +33,11 @@ Conducting research in TTS (Text to Speech). This includes using deep learning m
 
 
 ## Publications
-
+{{< rawhtml >}}
+<div style="widht: 50%">
+<dinoai-radar-chart></dinoai-radar-chart>
+</div>
+{{</ rawhtml >}}
 
 [Clyde: A Deep Reinforcement Learning DOOM Playing Agent](http://google.com) - Dino S. Ratlicffe, Sam Devlin, Udo Kruschwitz And Luca Citi - AAAI 2017
 

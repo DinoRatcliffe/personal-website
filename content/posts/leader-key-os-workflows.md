@@ -8,8 +8,6 @@ author = 'Dino Ratcliffe'
 
 I've configured my Linux workflow with a leader-based keyboard shortcut system, inspired by the Vim text editor, utilizing a single key (the "leader") for various custom actions. I've integrated this with the powerful dmenu tool, making it a breeze to access a list of applications or actions based on a given key combination. The adoption of a leader-based system offers numerous advantages, including enhanced productivity and efficiency. This is achieved by allowing users to execute complex tasks more swiftly, as frequently used commands can be chained together using the leader key. Furthermore, this approach simplifies hand positioning, enabling users to perform operations with more comfortable key combinations. Consequently, this can lead to reduced strain during lengthy work sessions and increased overall ease of use. Lastly, the leader-based system significantly improves discoverability and memory of keyboard shortcuts. By assigning commands to intuitive sequences, users are better equipped to recall and learn new shortcuts, ultimately streamlining their workflows.
 
-![Some information about his figure maybe with a link to the search engine used [here](https://google.com).](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Guy_Kawasaki_at_Wikimania_2015_-_2.jpg/640px-Guy_Kawasaki_at_Wikimania_2015_-_2.jpg )
-
 {{< dinoai-figure >}}
 <video width=100% autoplay loop muted controls>
     <source src="/video/citation-automation.mp4" type="video/mp4">
