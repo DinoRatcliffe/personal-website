@@ -139,8 +139,8 @@ class DinoAIForceGraph extends HTMLElement {
     }
 
     dragged(d) {
-        d.fx = d.x;
-        d.fy = d.y;
+        d.subject.x = d.x;
+        d.subject.y = d.y;
     }
 
     dragended(simulation) {

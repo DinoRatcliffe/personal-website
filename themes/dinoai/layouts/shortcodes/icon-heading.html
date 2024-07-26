@@ -1,0 +1,10 @@
+
+<div style="display: flex">
+    <div style="display: inline;">
+{{ readFile (print "svg/" (index .Params 0)) | safeHTML }}
+    </div>
+<div style="display: inline" >
+    <h3 style="margin: 0;padding: 0">{{ (index .Params 1) }}</h3>
+    <p style="margin: 0;padding: 0">{{ (index .Params 2) }}</p>
+</div>
+</div>
