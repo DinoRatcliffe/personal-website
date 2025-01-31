@@ -61,9 +61,11 @@ class DinoAINav extends HTMLElement {
                 .nav-list ::slotted(a) {
                     display: block;
                     text-align: center;
+		    padding: 0.3em;
+		    font-size: 1.2em;
                 }
                 .nav-list {
-                    padding-bottom: 1.5em;
+                    padding-bottom: 0em;
                 }
             }
             </style>

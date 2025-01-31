@@ -10,3 +10,13 @@ theme = 'dinoai'
   [markup.tableOfContents]
     endLevel = 5
     startLevel = 2
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20

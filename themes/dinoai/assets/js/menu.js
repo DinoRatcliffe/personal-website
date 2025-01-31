@@ -214,13 +214,74 @@ class DinoAIMenu extends HTMLElement {
                 @media screen and (max-width: 900px) {
                     #logoContainer {
                         min-width: unset;
+			margin-left: 1em;
+			margin-right: 1em;
                     }
                     #menu-top {
-                        height: unset;
+			padding: 0;
+			flex-direction: row;
+			height: unset;
                     }
                     #content {
                         min-width: unset;
+			padding: 0;
+			margin: 0;
                     }
+@keyframes move_logo_into_margin {
+    0% {
+        transform: translate(-3em, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes move_logo_outof_margin {
+    0% {
+        transform: translate(0em, 0);
+    }
+    100% {
+        transform: translate(-3em, 0);
+    }
+}
+@keyframes drawer_animation_in {
+    0% {
+        width: var(--menu-tab-width);
+        left: var(--menu-initial-left);
+	height: 4em;
+    }
+    33% {
+        width: var(--menu-tab-width);
+        left: 0em;
+    }
+    66% {
+        width: var(--menu-expanded-width);
+        left: 0em;
+    }
+    100% {
+        width: var(--menu-expanded-width);
+        left: 0em;
+    }
+}
+
+@keyframes drawer_animation_out {
+    100% {
+        width: var(--menu-tab-width);
+        left: var(--menu-initial-left);
+	height: 4em;
+    }
+    66% {
+        width: var(--menu-tab-width);
+        left: 0em;
+    }
+    33% {
+        width: var(--menu-expanded-width);
+        left: 0em;
+    }
+    0% {
+        width: var(--menu-expanded-width);
+        left: 0em;
+    }
+}
                 }
             </style>
             <div id="menu-top", class="initial-drawer">

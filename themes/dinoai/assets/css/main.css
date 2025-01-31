@@ -245,12 +245,6 @@ li::marker {
     margin-top: -1em;
 }
 
-@media screen and (max-width: 900px) {
-    #TableOfContents li a {
-        font-size: 1.5em;
-    }
-}
-
 figure a.no-decoration::before {
     content:""
 }
@@ -274,3 +268,26 @@ figcaption::before {
     counter-increment: figure;
     content: "Figure " counter(figure) ": ";
 }
+
+@media screen and (max-width: 900px) {
+    #TableOfContents li a {
+        font-size: 1.0em;
+    }
+    @keyframes show-menu {
+        0% {
+            padding-top: 3em;
+        }
+        100%{
+            padding-top: 4em;
+        }
+    }
+
+    @keyframes hide-menu {
+        0% { padding-top: 4em; }
+        100% { padding-top: 3em; }
+    }
+    main.menu-open-initial {
+        padding-top: 4em
+    }
+}
+

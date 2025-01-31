@@ -281,6 +281,10 @@ h1 {
         opacity: 1.0;
     }
 }
+#surname.smalltext {
+    font-size: 1em;
+}
+
 #drawer-logo {
     position: relative;
     left: -0.2em;
@@ -291,11 +295,19 @@ h1 {
     cursor: pointer;
 }
 
-#surname.largetext {
-    font-size: 2.43em;
+@media screen and (max-width: 900px) {
+#drawer-logo {
+	height: 2em;
+	padding-top: 0em;
 }
 #surname.smalltext {
-    font-size: 1em;
+	font-size: 0.4em;
+	display: none;
+}
+}
+
+#surname.largetext {
+    font-size: 2.43em;
 }
 
 #surname {
