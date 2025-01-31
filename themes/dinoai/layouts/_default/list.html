@@ -1,8 +1,13 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+    <div class="dinoai-post-list">
+      {{ range .Pages }}
+      <div class="dinoai-post-list-item">
+	<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+	<div class="dots"></div>
+	<p>{{ .Date | time.Format ":date_short" }}</p>
+        </div>
+      {{ end }}
+    </div>
 {{ end }}

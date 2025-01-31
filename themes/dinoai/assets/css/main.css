@@ -74,6 +74,60 @@ main.menu-open-initial {
     100% { padding-top: 0.1em; }
 }
 
+.dinoai-post-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dinoai-post-list p {
+    color: var(--text-colour);
+    padding: 0;
+    margin: 0;
+    flex: 1 0 auto;
+    opacity: 0.8;
+}
+.dinoai-post-list .dots {
+    overflow: hidden;
+    flex: 0 1 auto;
+    padding: 0em 0.5em;
+    opacity: 0.4;
+}
+.dinoai-post-list .dots:before {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    content: ". . . . . . . . . . . . . . . . . . . . .  "
+             ". . . . . . . . . . . . . . . . . . . . .  "
+             ". . . . . . . . . . . . . . . . . . . . .  "
+             ". . . . . . . . . . . . . . . . . . . . .  "
+}
+
+.dinoai-post-list h2 {
+    font-size: 1.0em;
+    padding: 0;
+    margin: 0;
+    flex: 1 0 auto;
+}
+
+pp.dots::before { display: block; white-space: nowrap; overflow: hidden; text-overflow: clip; content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " }
+
+.dinoai-post-list h2:after {
+    height: inherit;
+    width: inherit;
+    display: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+.dinoai-post-list a::before{
+    content: '';
+    color: var(--mark-colour);
+}
+.dinoai-post-list a::after{
+    content: '';
+    color: var(--mark-colour);
+}
+
 h1 {
     text-align: left;
 }
@@ -111,8 +165,10 @@ header {
 }
 
 footer {
+  max-width: 768px;
+  margin: auto;
   border-top: 1px solid #222;
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 a {
@@ -120,6 +176,7 @@ a {
   text-transform: uppercase;
   font-family: 'berkeley-mono';
   text-decoration: none;
+  width: contain;
 }
 
 a::before{

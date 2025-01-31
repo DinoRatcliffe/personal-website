@@ -1,5 +1,5 @@
 +++
-title = 'Embracing a Leader-Based Keyboard Shortcut System with Dmenu in Linux'
+title = 'Leader-Based Keyboard Shortcut System in Linux'
 date = 2024-03-18T19:00:41Z
 draft = false
 author = 'Dino Ratcliffe'

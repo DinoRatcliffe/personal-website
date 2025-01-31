@@ -38,6 +38,12 @@ Researched deep learning approaches for population prediction. Focused on forwar
 ### {{< svg "amazon-2.svg" >}} Amazon AGI
 Conducting research in TTS (Text to Speech). This includes using deep learning methods for modeling more natural and expressive speech. Recently working on speech-to-speech models.
 
+## Areas of Interest
+{{< rawhtml >}}
+<div style="width: 70%; margin: auto">
+<dinoai-force-graph></dinoai-force-graph>
+</div>
+{{</ rawhtml >}}
 
 ## Publications
 [Clyde: A Deep Reinforcement Learning DOOM Playing Agent](http://google.com) - Dino S. Ratlicffe, Sam Devlin, Udo Kruschwitz And Luca Citi - AAAI 2017
@@ -45,13 +51,6 @@ Conducting research in TTS (Text to Speech). This includes using deep learning m
 [Win Or Learn Fast Proximal Policy Optimisation](http://google.com) - Dino S. Ratcliffe, Katja Hofmann And Sam Devlin - IEEE Conference On Games 2019
 
 [Cross-Lingual Style Transfer With Conditional Prior VAE And Style Loss](http://google.com) - Dino S. Ratcliffe, You Wang, Alex Mansbridge, Penny Karanasou, Alexis Moinet And Marius Cotescu - Interspeech 2022
-
-## Areas of Interest
-{{< rawhtml >}}
-<div style="width: 50%">
-<dinoai-force-graph></dinoai-force-graph>
-</div>
-{{</ rawhtml >}}
 
 
 ## Skill & Development
