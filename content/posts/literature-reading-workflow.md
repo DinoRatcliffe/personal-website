@@ -70,23 +70,13 @@ The E-Reader is where most of my reading takes place, I resisted using E-Readers
 
 There is one integration I have made here however, and that is the introduction of an LLM in the loop. As shown below I am able to highlight a section of the document and attach a note with a question, this is then given to an LLM with the document in the prompt in order to ground the model. This processing is handled on the central server that contains powerfull GPUs allowing for large-ish models to be run in order to answer the given questions, the document is then updated and the answer appreas on the E-Reader as shown in Figure 1.
 
-{{< dinoai-figure >}}  
-<img src="/images/boox-with-llm-note.jpg"/>
-<figcaption>
-Demonstration of LLM explanation given from hightlight in PDF.
-</figcaption>
-{{< /dinoai-figure >}}  
+![E-Reader with dialog showing LLM answer to a highlighted question.](/images/boox-with-llm-note.jpg)
 
 I also have it setup so that different highlight colour correspond to different LLM models, allowing for models trained on maths, code or other tasks to be used in order to get better results depending on the question. The model used for the inference is given in the note so I know what model and version was used to generate the answer. In my experiance this functionality is hit and miss, most of the time the LLM answers the question at such a high-level it doesn't add much insight, however when using task specific LLMs the usefullness improves greatly. There have been a few instances in using this setup where I have been impresed with the result and feel it actually aided in helping me understand the work quicker.
 
 All of these annotations are autmatically synced to my Laptop, so once having read through the paper initially on the E-Reader I am able to seamlessly move to the laptop if the paper is relevant to my current research. When opening the paper on my laptop three main windows are opended, the first is a [Zathura]() instance of the paper opened to the last viewed page (left pane), my notes on the paper are then opened (top-right pane) and finally an LLM chat is opened with the content of the paper already prepared in a prompt for asking quick queries. This setup can be seen in the Figure 2. 
 
-{{< dinoai-figure >}}  
-<img src="/images/laptop-reading-setup.jpg"/>
-<figcaption>
-Demonstration of reading and asking questions to LLM on Laptop computer.
-</figcaption>
-{{< /dinoai-figure >}}  
+![Demonstration of reading and asking questions to LLM on Laptop computer.](/images/laptop-reading-setup.jpg)
 
 This allows me to easliy catch up on my notes for the paper and see all of the annotations that I may have made on the E-Reader, along with any questions that have been highlighted and answerd by an LLM. This is usually the stage in reading that I actually apply the contributions of the paper to the current research I am working on this I would add extra tags to the paper here in order to make sure it is tracked for the specific project. 
 
