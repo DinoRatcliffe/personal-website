@@ -1,5 +1,5 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
+baseURL = 'https://dino.ai/'
+languageCode = 'en-gb'
 title = 'Dino.AI'
 theme = 'dinoai'
 
@@ -10,6 +10,11 @@ theme = 'dinoai'
   [markup.tableOfContents]
     endLevel = 5
     startLevel = 2
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 5
 
 [[menus.main]]
 name = 'About'
