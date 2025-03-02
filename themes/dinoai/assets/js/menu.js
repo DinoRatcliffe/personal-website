@@ -44,6 +44,8 @@ class DinoAIMenu extends HTMLElement {
     cursor: pointer;
     min-width: 768px;
     margin: auto;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 
@@ -287,13 +289,13 @@ class DinoAIMenu extends HTMLElement {
             <div id="menu-top", class="initial-drawer">
                 <div id="logoContainer" class="contrast clickable-cursor">
                 <dinoai-logo></dinoai-logo>
+                <div class="breadcrumb">
+                    <slot name="breadcrumb"></slot>
+                </div>
                 </div>
                 <div id="content" class="initial-content">
                     <div class="navigation">
                         <slot name="navigation"></slot>
-                    </div>
-                    <div class="social">
-                        <slot name="social"></slot>
                     </div>
                 </div>
             </div>

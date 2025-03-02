@@ -11,6 +11,9 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 <dinoai-menu>
+    <div id="dinoai-breadcrumb" slot="breadcrumb">
+        {{ partial "breadcrumb.html" . }}
+    </div>
     <dinoai-nav id="nav" slot="navigation">
     {{- range site.Menus.main }}
         {{ if $page.IsMenuCurrent .Menu . }}

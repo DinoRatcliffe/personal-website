@@ -27,6 +27,23 @@
 	font-style: italic;
 }
 
+#dinoai-breadcrumb ol {
+    color: var(--text-colour);
+    margin: 0;
+    font-family: 'berkeley-mono';
+    list-style: none;
+    font-size: 0;
+}
+
+#dinoai-breadcrumb ol li {
+    display: inline-block;
+    font-size: initial;
+}
+
+#dinoai-breadcrumb ol li::after{
+    content: '/';
+}
+
 time {
     font-family: 'berkeley-mono';
 }
