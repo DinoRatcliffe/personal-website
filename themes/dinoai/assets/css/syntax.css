@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     /* Background */ .bg { color:#fff;background-color:#00ff00; }
     /* PreWrapper */ .chroma { color:#fefefe;background-color:var(--bg-highlight); padding:1em;overflow: scroll;}
     .chroma code {background-color: var(--bg-highlight);border:unset;}
@@ -87,10 +87,10 @@
     /* GenericUnderline */ .chroma .gl {  }
     /* TextWhitespace */ .chroma .w {  }
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     /* Background */ .bg { color:#fff;background-color:#00ff00; }
-    /* PreWrapper */ .chroma { color:#fefefe;background-color:var(--bg-highlight); padding:1em;overflow: scroll;}
-    .chroma code {background-color: var(--bg-highlight);border:unset;}
+    /* PreWrapper */ .chroma { color:#fefefe;background-color:#242424; padding:1em;overflow: scroll;}
+    .chroma code {background-color: #242424;border:unset;}
     /* Other */ .chroma .x {  }
     /* Error */ .chroma .err { color:#bf616a }
     /* CodeLine */ .chroma .cl {  }
