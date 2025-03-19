@@ -216,17 +216,16 @@ class DinoAIMenu extends HTMLElement {
                 @media screen and (max-width: 900px) {
                     #logoContainer {
                         min-width: unset;
-			margin-left: 1em;
-			margin-right: 1em;
+			margin: 1em;
                     }
                     #menu-top {
 			padding: 0;
-			flex-direction: row;
+			flex-direction: column;
 			height: unset;
                     }
                     #content {
                         min-width: unset;
-			padding: 0;
+			padding: 0 1.8em;
 			margin: 0;
                     }
 @keyframes move_logo_into_margin {

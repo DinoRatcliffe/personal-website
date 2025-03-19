@@ -334,9 +334,13 @@ figcaption::before {
         margin-left: -0.35em;
         margin-top: -1em;
     }
+
 }
 
 @media screen and (max-width: 900px) {
+    #dinoai-breadcrumb {
+        display: none;
+    }
     ul {
         margin: 0;
         padding-left: 2em;
