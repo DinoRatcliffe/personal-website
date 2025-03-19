@@ -94,7 +94,7 @@ ul.dinoai-taglist {
     text-align: right;
     font-family: 'berkeley-mono', monospace;
     font-weight: normal;
-    border-bottom: 1px dashed var(--text-colour);
+    border-bottom: 0.1em dashed var(--text-colour);
     color: var(--text-colour);
     font-size: 1em;
 }
@@ -104,7 +104,7 @@ ul.dinoai-taglist {
 
 .dinoai-taglist li {
     display: inline-block;
-    border: solid 1px #be79ff;
+    border: solid 0.1em #be79ff;
     padding: 0em 0.3em;
     border-style: dashed;
     margin-left: 0.0em;
@@ -225,25 +225,29 @@ h1 {
 
 main h2 {
     text-transform: uppercase;
-    font-family: 'Hanken Grotesk';
+    font-family: 'berkeley-mono';
+    font-weight: normal;
     margin-bottom: 0em;
+    border-bottom: 0.1em dashed var(--text-colour);
 }
 main h3 {
     text-transform: uppercase;
-    font-family: 'Hanken Grotesk';
+    font-family: 'berkeley-mono';
+    font-weight: normal;
     margin-bottom: 0em;
 }
 main h4 {
     text-transform: uppercase;
-    font-family: 'Hanken Grotesk';
+    font-family: 'berkeley-mono';
+    font-weight: normal;
 }
 main h2::after {
-    background-color: #be79ff;
     content: "";
     color: transparent;
-    height: 0.1em;
+    height: 0;
     width: 1em;
-    display: block;
+    display: none;
+    border-bottom: 0.1em dashed #be79ff;
 }
 
 main.menu-open {
@@ -261,8 +265,9 @@ header {
 }
 
 footer {
-  border-top: 1px solid #222;
+  border-top: 0.1em dashed #222;
   margin-top: 1em;
+  font-family: 'berkeley-mono';
 }
 
 a {
@@ -295,7 +300,6 @@ ul {
     margin-left : calc(var(--radius) - var(--spacing));
     padding-left : 1em;
     list-style-type: "> ";
-    font-family: 'berkeley-mono';
 }
 
 li::marker {
