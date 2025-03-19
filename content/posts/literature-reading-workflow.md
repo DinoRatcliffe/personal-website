@@ -3,6 +3,7 @@ title = 'Literature Reading Workflow'
 date = 2025-01-31T19:01:17Z
 draft = false
 author = 'Dino Ratcliffe'
+tags = ["Linux", "Research"]
 +++
 
 ## Introduction

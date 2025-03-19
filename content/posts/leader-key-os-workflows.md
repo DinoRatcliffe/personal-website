@@ -3,6 +3,7 @@ title = 'Leader-Based Linux Workflows'
 date = 2024-03-18T19:00:41Z
 draft = false
 author = 'Dino Ratcliffe'
+tags = ["Linux", "Workflow"]
 +++
 ## Introduction
 
