@@ -228,7 +228,7 @@ main h2 {
     font-family: 'berkeley-mono';
     font-weight: normal;
     margin-bottom: 0em;
-    border-bottom: 0.1em dashed var(--text-colour);
+    //border-bottom: 0.1em dashed var(--text-colour);
 }
 main h3 {
     text-transform: uppercase;
@@ -247,7 +247,7 @@ main h2::after {
     height: 0;
     width: 1em;
     display: none;
-    border-bottom: 0.1em dashed #be79ff;
+    //border-bottom: 0.1em dashed #be79ff;
 }
 
 main.menu-open {
