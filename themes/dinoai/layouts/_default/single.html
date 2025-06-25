@@ -4,7 +4,7 @@
   <div class="dinoai-toc-tags">
       <div class="dinoai-toc">
           <h2>Table of Contents</h2>
-          {{ .TableOfContents }}
+          {{ .TableOfContents | replaceRE "HAHAHUGO[\\S]+" "" | safeHTML }}
       </div>
       {{ partial "tags.html" (dict "page" .) }}
   </div>
