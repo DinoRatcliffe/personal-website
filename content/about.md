@@ -55,7 +55,7 @@ Conducting research in TTS (Text to Speech). This includes using deep learning m
 
 ## Skill & Development
 {{< rawhtml >}}
-<div style="width: 50%">
+<div style="max-width: 28em;">
 <dinoai-radar-chart></dinoai-radar-chart>
 </div>
 {{</ rawhtml >}}
