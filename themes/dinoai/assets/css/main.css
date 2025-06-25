@@ -384,7 +384,11 @@ figcaption::before {
     #dinoai-breadcrumb {
         display: none;
     }
-    ul {
+    main {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #TableOfContents ul {
         margin: 0;
         padding-left: 2em;
         padding-top: 0;
