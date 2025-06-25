@@ -7,10 +7,6 @@ class DinoAIMenu extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 :host {
-//                    --primary-colour: #E42826;
-                    --primary-colour: transparent;
-                    --background-colour: whit;
-                    --text-colour: black;
                     --menu-speed: 0.8s;
 
                     --menu-initial-left: 0em;

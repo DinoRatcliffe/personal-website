@@ -81,14 +81,36 @@ code {
 ul.dinoai-taglist {
     list-style: none;
     margin: 0;
-    padding: 0.3em 0;
+    padding: 1em 0;
     display: flex;
     justify-content: right;
+    max-width: 14em;
+    flex-wrap: wrap;
 }
 
 .dinoai-tags {
     display: flex;
     justify-content: right;
+    flex-grow: 1;
+}
+
+.dinoai-toc {
+    width: fit-content;
+}
+
+.dinoai-toc-tags {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dinoai-toc-tags h2 {
+    text-align: left;
+    font-family: 'berkeley-mono', monospace;
+    font-weight: normal;
+    border-bottom: 0.1em dashed var(--text-colour);
+    color: var(--text-colour);
+    font-size: 1em;
 }
 .dinoai-tags h2 {
     text-align: right;
@@ -104,10 +126,10 @@ ul.dinoai-taglist {
 
 .dinoai-taglist li {
     display: inline-block;
-    border: solid 0.1em #be79ff;
+    border: solid 0.1em #be79ff85;
     padding: 0em 0.3em;
     border-style: dashed;
-    margin-left: 0.0em;
+    margin: 0.2em;
 }
 
 .dinoai-taglist li:last-child {
@@ -384,9 +406,16 @@ figcaption::before {
     #dinoai-breadcrumb {
         display: none;
     }
+
+    .dinoai-toc {
+        width: 100%;
+    }
     main {
         padding-left: 0em;
         padding-right: 0em;
+    }
+    #TableOfContents {
+        padding: 1em 0em;
     }
     #TableOfContents ul {
         margin: 0;
@@ -413,6 +442,9 @@ figcaption::before {
     main {
         max-width: 100%;
         margin: 0;
+    }
+    ul.dinoai-taglist {
+        max-width: unset;
     }
 }
 

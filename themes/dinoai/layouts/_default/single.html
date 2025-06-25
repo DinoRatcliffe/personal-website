@@ -1,13 +1,17 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
 
-  <h2>Table of Contents</h2>
-  {{ .TableOfContents }}
+  <div class="dinoai-toc-tags">
+      <div class="dinoai-toc">
+          <h2>Table of Contents</h2>
+          {{ .TableOfContents }}
+      </div>
+      {{ partial "tags.html" (dict "page" .) }}
+  </div>
 
   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
   {{ $dateHuman := .Date | time.Format ":date_long" }}
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-  {{ partial "tags.html" (dict "page" .) }}
 
   {{ .Content }}
 {{ end }}
