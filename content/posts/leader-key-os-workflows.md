@@ -10,7 +10,7 @@ tags = ["Linux", "Workflow"]
 I've configured my Linux workflow with a leader-based keyboard shortcut system, inspired by the Vim text editor, utilizing a single key (the "leader") for various custom actions. I've integrated this with the powerful dmenu tool, making it a breeze to access a list of applications or actions based on a given key combination. The adoption of a leader-based system offers numerous advantages, including enhanced productivity and efficiency. This is achieved by allowing users to execute complex tasks more swiftly, as frequently used commands can be chained together using the leader key. Furthermore, this approach simplifies hand positioning, enabling users to perform operations with more comfortable key combinations. Consequently, this can lead to reduced strain during lengthy work sessions and increased overall ease of use. Lastly, the leader-based system significantly improves discoverability and memory of keyboard shortcuts. By assigning commands to intuitive sequences, users are better equipped to recall and learn new shortcuts, ultimately streamlining their workflows.
 
 {{< dinoai-figure >}}
-<video width=100% autoplay loop muted controls>
+<video width=100% autoplay loop muted nocontrols playsinline>
     <source src="/video/citation-automation.mp4" type="video/mp4">
     <source src="/video/citation-automation.ogg" type="video/ogg">
     Your browser does not support the video tag
@@ -71,10 +71,28 @@ This submenu has many more search providers with similar logical key combination
 
 The other form of searching I refer to is specialised search, these searches are not grouped under the `<leader>s` menu but instead reside in their appropriate sub-menus. Such as searhing arxiv or google sholar, these are actually under a citation submenu for handling my library of acedemic references. A google scholar search can be done via `<leader>Cs` and Arxiv through `<leader>Ca`.
 
+The current selected text is also given as an option in the menu allowing for fast searching of text strings anywhere in the OS. 
+{{< dinoai-figure >}}
+<video width=100% autoplay loop muted nocontrols playsinline>
+    <source src="/video/open_music.mp4" type="video/mp4">
+    <source src="/video/open_music.ogg" type="video/ogg">
+    Your browser does not support the video tag
+</video>
+<figcaption>
+Selected text is the default option when running commands that require user input. Here I demonstrate highlighting text in a webpage and doing a search on youtube.
+</figcaption>
+{{< /dinoai-figure >}}
+
+Above is a sample where I search youtube for an albumn title, but I could also be selecting text in the terminal and searching the arch wiki.
+
+
+
+
+
 ### SSH
 
 {{< dinoai-figure >}}
-<video width=100% autoplay loop muted controls>
+<video width=100% autoplay loop muted nocontrols playsinline>
     <source src="/video/ssh-automation.mp4" type="video/mp4">
     <source src="/video/ssh-automation.ogg" type="video/ogg">
     Your browser does not support the video tag
@@ -102,7 +120,7 @@ Another frequently used shortcut is controlling wifi-connected devices. When at 
 ### Citations
 
 {{< dinoai-figure >}}
-<video width=100% autoplay loop muted controls>
+<video width=100% autoplay loop muted nocontrols playsinline>
     <source src="/video/citation-automation.mp4" type="video/mp4">
     <source src="/video/citation-automation.ogg" type="video/ogg">
     Your browser does not support the video tag
@@ -131,7 +149,7 @@ I have a few more automations around reading papers and taking notes especially 
 ### LLM
 
 {{< dinoai-figure >}}
-<video width=100% autoplay loop muted controls>
+<video width=100% autoplay loop muted nocontrols playsinline>
     <source src="/video/llm-automation.mp4" type="video/mp4">
     <source src="/video/llm-automation.ogg" type="video/ogg">
     Your browser does not support the video tag
