@@ -49,12 +49,6 @@ Here I will show a few workflows that have been greatly improved by switching to
 
 Similar to the connection automation above we can also apply this to audio outputs, by hitting `<leader>a` a list of current audio output devices is shown. You can then just start typing the name of an output device and as soon as only one option remains the computer will start outputting all audio to that device.
 
-### Display output modes
-
-#### Docked
-#### Dual
-#### Laptop
-
 ### Search Engines
 
 One important aspect of this system is that many subactivities can be elevated to first class actions. This includes actions such as searching the web, instead of having to open up a browser to conduct as websearch all these are elevated to be accessed anywhere in the OS. 

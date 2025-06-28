@@ -1,0 +1,13 @@
+{{- $scratch := newScratch }}
+{{- $scratch.Set "path" "/" }}
+
+<ol>
+    <li><a href="/">~</a></li>
+    {{ range $index, $element := split .page.Path "/" }}
+        {{ $scratch.Add "path" $element }}
+        {{ if ne $element "" }}
+        <li><a href='{{ $scratch.Get "path" }}'>{{ $element }}</a></li>
+            {{ $scratch.Add "path" "/" }}
+        {{ end }}
+    {{ end }}
+</ol>

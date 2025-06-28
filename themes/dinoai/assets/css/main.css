@@ -240,9 +240,10 @@ pp.dots::before { display: block; white-space: nowrap; overflow: hidden; text-ov
 
 h1 {
     text-align: left;
-    //font-family: 'berkeley-mono';
-    font-family: 'Hanken Grotesk';
+    font-family: 'berkeley-mono';
+    //font-family: 'Hanken Grotesk';
     margin-top: 0.9em;
+    font-weight: 100;
 }
 
 main h2 {

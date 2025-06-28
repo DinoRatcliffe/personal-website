@@ -1,0 +1,13 @@
+{{- $page := .page }}
+{{- with $page.GetTerms "tags" }}
+<div class="dinoai-tags">
+    <div class="dinoai-tags-2">
+    <h2>Tags</h2>
+    <ul class="dinoai-taglist">
+      {{- range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    </div>
+</div>
+{{- end }}
