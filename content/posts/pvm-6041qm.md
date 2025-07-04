@@ -10,7 +10,7 @@ tags = ["Retro Technology"]
 
 ## Introduction
 
-I recently got hold of a second hand Sony `PVM-6041QM` CRT. I thought it would make a nice screen for showing album art in my reading/listening area I created. It now has also doubled up as a screen to play retro games on, mainly 16bit systems.
+I recently acquired a Sony `PVM-6041QM` CRT. I thought it would make a nice screen for showing album art in my reading/listening area I created. It now has also doubled up as a screen to play retro games on, mainly 16bit systems.
 
 ## Setup
 
@@ -18,19 +18,19 @@ I recently got hold of a second hand Sony `PVM-6041QM` CRT. I thought it would m
 
 Outputting an image to this model is pretty straightforward, it receives RGBS signals that can be easily converted with a VGA to Scart adapter and then using a SCART to RGBS cable to hook up the computer. In my case I was using a modified Sony Vaio `VGN-UX1XN` although the modification is just an upgraded CPU so has little bearing on getting this monitor to work.
 
-Although the hardware setup is pretty simple getting Linux (with intel onboard graphics) to output a signal the monitor will sync to is slightly harder. I don't know the details but as far as I can gather the intel onboard graphics are not able to run at a slow enough clock speed for a 15Khz CRT, thus you have to use a "super resolution". This involves outputting a much wider resolution, the modeline used in my setup is below:
+Although the hardware setup is pretty simple getting Linux (with intel onboard graphics) to output a signal the monitor will sync to is slightly harder. I don't know the details but as far as I can gather the intel onboard graphics are not able to run at a slow enough clock speed for a 15KHz CRT, thus you have to use a "super resolution". This involves outputting a much wider resolution, the modeline used in my setup is below:
 
 ```sh {lineNos=false}
 "1920x240_60.00"   36.00  1920 1968 2160 2400  240 243 253 259 -hsync +vsync
 ```
 
-This outputs a much wider image and appears squashed on the CRT when displaying. However it is possible to fix this scaling issue outputting through `X11`. Here is my `xrandr` command for outputting to the CRT.
+This outputs a much wider image and appears squashed on the CRT when displaying. However it is possible to fix this scaling issue when outputting through `X11`. Here is my `xrandr` command for outputting to the CRT.
 
 ```sh {lineNos=false}
 xrandr --output VGA1 --primary --mode 1280x240_60 --scale 0.25x1
 ```
 
-This resulted in displaying an image with the correct scaling, however this position and geometry of the CRT was not great. In the next section I show how I adjusted the geometry to improve the image.
+This resulted in displaying an image with the correct scaling, however the position and geometry of the image was not great. In the next section I show how I adjusted the geometry to improve the image.
 
 ### Adjusting the image
 
@@ -51,11 +51,10 @@ Finally I was able to get the image to look somewhat correct, as shown in Figure
 
 ![Finished adjustment of PVM playing games.](/images/PVM60/Front-PVM-60.png)
 
-
 ## Finished
 
-All that remained was putting it back into it's home in my reading corder along with my music listening setup. For now I will enjoy mainly retro gaming on the monitor and using it to display the currently playing album artwork.
+All that remained was putting it back into it's home in my reading corner along with my music listening setup. For now I will enjoy mainly retro gaming on the monitor and using it to display the currently playing album artwork.
 
 ![Final home for the monitor in the reading corner.](/images/PVM60/Far-in-situ-PVM-60.png)
 
-In the future I aim to create my own TUI (Terminal User Interfact) that can be controlled using the connect PS1 controller to allow for a variety of use cases. This will probably be similarly built to my leader based workflow outlined in this [post](/posts/leader-key-os-workflows/), just more tailored to a controller based input method.
+In the future I aim to create my own TUI (Terminal User Interface) that can be controlled using the connect PS1 controller to allow for a variety of use cases. This will probably be similarly built to my leader based workflow outlined in this [post](/posts/leader-key-os-workflows/), just more tailored to a controller based input method.
