@@ -34,40 +34,52 @@ This notion of having multiple hosts is a hack for allowing experiments to be ru
 #### Push
 The push command allows you to easly rsync the latest code locally to all machines in a host_group like so:
 
-```bash
+```bash {linenos=false}
 igor push --host_group aws
 ```
 
 This will rsync the code to all of the machines listed in the aws host_group if defined in the config. If no host group is given then the dev host_group is used, allowing for pushing of the code to your remote development machine using:
 
-```bash
+```bash {linenos=false}
 igor push
 ```
 
 #### Docker
 This is the most complicated command in igor with many subcommands for dealing with building and running docker containers remotely. The subcommand are detailed below:
 
-- `igor docker build`
+```bash {linenos=false}
+igor docker build
+```
 
 This command builds the dockerfile defined in the config on the remote machines in the given `--host_group` in the case of the command above no host_group is given so the `dev` host group is used by default. The docker build command will only be run if there is an update to the dockerfile or any of the files defined in `docker_rebuild_files`.
 
-- `igor docker clean`
+```bash {linenos=false}
+igor docker clean
+```
 
 This command will stop and remove all running docker containers for the current project for the given host_group.
 
-- `igor docker setup`
+```bash {linenos=false}
+igor docker setup
+```
 
 This is the most used command as it acts as a shorthand for pushing the new code building the docker image (if needed) and runn
 
-- `igor docker setup`
+```bash {linenos=false}
+igor docker setup
+```
 
 This is the most used command as it acts as a shorthand for pushing the new code building the docker image (if needed) and running a container using that image with the codebase mounted and the ports for debugging exposed. Again the port to expose for debugging is given in the config using `debug_port`. 
 
-- `igor docker exec [command]`
+```bash {linenos=false}
+igor docker exec [command]
+```
 
 This allows you to run a bash command with the projects docker container running on remote machines in the given host_group. If there are more than 1 machines then you will recieve back multiple results. This is useful during developement to do quick commands to check various commands remotly, very handy for debugging missing dependencies etc.
 
-- `igor docker repl [repl_cmd]`
+```bash {linenos=false}
+igor docker repl [repl_cmd]
+```
 
 This is a very powerfull command when developing remotely as it allows you to open a repl within a remote docker container over ssh. This works will most repl's, obviously in my case this would be ipython and this is set as my default repl in the config under `repl_cmd`. However it is also usefull for getting a quick bash shell within a remote docker container by running `igor docker repl bash` as if you define a command for the repl the default is not used.
 
@@ -118,7 +130,7 @@ This ends up being the minimal information needed in order to be able to start a
 
 Finally actually starting an experiment can be done like so:
 
-```bash
+```bash {linenos=false}
 igor experiment run --host_group cluster training
 ```
 
@@ -143,6 +155,8 @@ I also make use of the iron plugin for having a repl within nvim and I have set 
 This is for me the most powerfull aspect of this whole setup, by combining the busy work of pushing building and running the code above with vimspector for VIM we are able to now setup seamless debugging within remote docker containers.
 
 This is relativly seamless with a simple vim command that can push and build the code remotly (if needed) and run the debugger and attach locally. An example of debugging a simple python script completly remotly is given below:
+
+![Debugging python script running on remote machine within a docker container.](/images/igor/debugger-screenshot.jpg)
 
 
 
