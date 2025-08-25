@@ -3,7 +3,7 @@ title = 'Igor: Tool for remote development'
 date = 2025-07-21T17:41:45+01:00
 draft = false
 author = 'Dino Ratcliffe'
-tags = ["Linux", "Workflow"]
+tags = ["Linux", "Workflow", "Software projects"]
 +++
 
 ## Igor 
@@ -252,3 +252,6 @@ The .vimspector config I use is given below:
 
 This above configuration unfortunatly has quite a few magic values as I haven't fully finished my work on having this automatically generated from the igor config. However I put it here as it took me awhile to figure out and there weren't many examples online that I could base this on, hopefully someone may find this usefull.
 
+### PhD setup
+
+![My setup at QMUL (Queen Mary University of London) during my PhD circa 2018-2020.](/images/qmul_setup.jpg)
