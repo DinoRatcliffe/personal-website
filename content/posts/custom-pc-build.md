@@ -64,7 +64,7 @@ As mentioned earlier this was designed to allow for the reservoir to be mounted 
 
 In the end I didn't go with the reservoir mounted that high as it made the routing of the water pipes rather ugly without a nice way of making it look cleaner. This resulted in me deciding to mount the reservoir much lower. This does make bleeding the water system a bit of a pain however that is not something I have to do very often and I will have to look at the PC every day. This resulted in me dropping the reservoir as low as it goes making sure that a good portion is still above the water pump to prevent starvation.
 
-## Back Board
+### Back Board
 
 I wanted to make sure that every part of the build of this computer was thought through and that everything had it's place and was considered. Especially with routing of cables and water pipes, with this often looking messy and having to conform to the case design in sub optimal ways. I decided to create a custom back panel with clear cutouts and passtroughs for the water pipes and cables being routed to the back compartment of the case. This ended up being the bulk of the build as it took a lot of time to design and finally build with the limitations of my CNC machine having to be worked around.
 
