@@ -161,6 +161,7 @@ First I removed the temporary air cooler, as it would get in the way for the res
 
 ![Installation of CPU waterblock and motherboard.](/images/pc-build/adding_motherboard_and_cpu_waterblock.jpg)
 
+I then installed the GPUs into the machine and begun adding the water pipe for routing of the water to all of the components. The GPUs where plumed in parallel as the upstream components and then the output fed to the CPU. I knew ahead of time that this machine was mainly for deep learning experiments so cooling of the GPUs was the priority, hence having them be the first components in the loop, with cooling of the CPU being a secondary consideration. This probably doesn't actually make any difference on the temperatures due to the flow rate but it seemed like the most logical setup to me. 
 
 ![](/images/pc-build/adding_first_gpu.JPG)
 ![](/images/pc-build/adding_second_gpu.JPG)
