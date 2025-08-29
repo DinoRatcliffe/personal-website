@@ -154,9 +154,13 @@ main {
 
 .dinoai-centered-full h1 {
     margin: 0;
+    background-color: var(--bg-highlight);
+    padding: 10px 20px 0px 20px;
 }
 .dinoai-centered-full p {
     margin: 0;
+    background-color: var(--bg-highlight);
+    padding: 0px 20px 10px 20px;
 }
 
 main.menu-open-initial {
@@ -343,6 +347,7 @@ figure {
     padding: 1em;
     margin: 0;
     background-color: var(--bg-highlight);
+    overflow-x: scroll;
 }
 
 figure img {
@@ -401,6 +406,20 @@ figcaption::before {
         margin-top: -1em;
     }
 
+}
+
+.dinoai-bg {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/images/BG.JPG');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 900px) {
