@@ -154,12 +154,10 @@ main {
 
 .dinoai-centered-full h1 {
     margin: 0;
-    background-color: var(--bg-highlight);
     padding: 10px 20px 0px 20px;
 }
 .dinoai-centered-full p {
     margin: 0;
-    background-color: var(--bg-highlight);
     padding: 0px 20px 10px 20px;
 }
 
@@ -204,16 +202,19 @@ main.menu-open-initial {
     overflow: hidden;
     flex: 0 1 auto;
     padding: 0em 0.5em;
-    opacity: 0.4;
+    opacity: 0.1;
 }
 .dinoai-post-list .dots:before {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
-    content: "................................................... "
-             "................................................... "
-             "................................................... "
+    content: "..................................................."
+             "..................................................."
+             "..................................................."
+             "..................................................."
+             "..................................................."
+             "..................................................."
              "................................................... "
 }
 
@@ -415,7 +416,6 @@ figcaption::before {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('/images/BG.JPG');
     background-size: cover;
     background-position: center;
     z-index: -1;

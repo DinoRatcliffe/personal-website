@@ -6,7 +6,7 @@
       <div class="dinoai-post-list-item">
 	<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
 	<div class="dots"></div>
-	<p>{{ .Date | time.Format ":date_short" }}</p>
+	<p>{{ .Date.Format "02/01/2006" }}</p>
         </div>
       {{ end }}
     </div>
