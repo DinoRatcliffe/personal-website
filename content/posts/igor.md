@@ -63,12 +63,6 @@ This command will stop and remove all running docker containers for the current 
 igor docker setup
 ```
 
-This is the most used command as it acts as a shorthand for pushing the new code building the docker image (if needed) and runn
-
-```bash {linenos=false}
-igor docker setup
-```
-
 This is the most used command as it acts as a shorthand for pushing the new code building the docker image (if needed) and running a container using that image with the codebase mounted and the ports for debugging exposed. Again the port to expose for debugging is given in the config using `debug_port`. 
 
 ```bash {linenos=false}
