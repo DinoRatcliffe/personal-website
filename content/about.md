@@ -38,6 +38,10 @@ Researched deep learning approaches for population prediction. Focused on forwar
 ### {{< svg "amazon-2.svg" >}} Amazon AGI
 Conducting research in TTS (Text to Speech). This includes using deep learning methods for modeling more natural and expressive speech. Recently working on speech-to-speech models.
 
+### {{< svg "jetbrains.svg" >}} JetBrains
+
+Research into AI models and agents for software engineering tasks. Focus on models with multi-step reasoning for complex engineering task completion with external reward signals.
+
 ## Areas of Interest
 {{< rawhtml >}}
 <div style="width: 70%; margin: auto">

@@ -263,6 +263,10 @@ main h3 {
     font-family: 'berkeley-mono';
     font-weight: normal;
     margin-bottom: 0em;
+    display: flex;
+}
+main h3 svg {
+    margin-right: 0.5em;
 }
 main h4 {
     text-transform: uppercase;
