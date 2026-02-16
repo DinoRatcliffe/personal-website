@@ -4,3 +4,5 @@
 hugo_stats.json
 
 /.hugo_build.lock
+
+.ws
