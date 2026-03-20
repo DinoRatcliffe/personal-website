@@ -111,6 +111,7 @@ ul.dinoai-taglist {
     border-bottom: 0.1em dashed var(--text-colour);
     color: var(--text-colour);
     font-size: 1em;
+    padding-bottom: 0.5em;
 }
 .dinoai-tags h2 {
     text-align: right;
@@ -245,10 +246,13 @@ pp.dots::before { display: block; white-space: nowrap; overflow: hidden; text-ov
 
 h1 {
     text-align: left;
-    font-family: 'berkeley-mono';
+    //font-family: 'berkeley-mono';
+    font-family: 'Noto Serif JP';
     //font-family: 'Hanken Grotesk';
-    margin-top: 0.9em;
-    font-weight: 100;
+    margin-top: 0.3em;
+    font-weight: 900;
+    font-size: 3em;
+    opacity: 0.8;
 }
 
 main h2 {
@@ -302,10 +306,17 @@ footer {
   font-family: 'berkeley-mono';
 }
 
+a.nav-link {
+  font-family: 'berkeley-mono';
+  font-weight: 100;
+}
+
 a {
   color: #be79ff;
   text-transform: uppercase;
-  font-family: 'berkeley-mono';
+  font-family: 'Noto Serif JP';
+  //font-family: 'berkeley-mono';
+  font-weight: bolder;
   text-decoration: none;
   width: contain;
   flex: 0 0 auto;
@@ -337,6 +348,11 @@ ul {
 li::marker {
     font-family: 'berkeley-mono';
     color: #8d8d8d;
+}
+
+li a {
+    font-family: 'berkeley-mono';
+    font-weight: 200
 }
 
 

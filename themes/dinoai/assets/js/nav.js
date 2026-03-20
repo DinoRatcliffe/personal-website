@@ -13,7 +13,6 @@ class DinoAINav extends HTMLElement {
             }
 
 
-
             .nav-list ::slotted(a:hover) {
                 color: rgba(255, 255, 255, 0.8);
             }
@@ -26,7 +25,6 @@ class DinoAINav extends HTMLElement {
                 font-size: 1.2em;
                 opacity: 0;
                 transition: border-bottom 0.5s, background-color 0.5s, color 0.5s, opacity: 0.5s;
-                font-family: 'Gothic A1', sans-serif;
                 text-decoration: none;
                 height: 1.5em;
                 line-height: 1.5em;

@@ -17,11 +17,11 @@ Renders a menu for the given menu ID.
     <dinoai-nav id="nav" slot="navigation">
     {{- range site.Menus.main }}
         {{ if $page.IsMenuCurrent .Menu . }}
-          <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} class="iron-selected">
+          <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} class="iron-selected nav-link">
             {{ .Name }}
           </a>
        {{ else }}
-          <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+          <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} class="nav-link" href="{{ .URL }}">
             {{ .Name }}
           </a>
        {{ end }}

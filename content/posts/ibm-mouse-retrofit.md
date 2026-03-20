@@ -10,27 +10,27 @@ tags = ["HARDWARE PROJECTS"]
 
 ## Introduction
 
-For awhile now I have been wanting to use a more appropriate mouse with the other hardware I use in my main computer setup. This mainly consists of a FSSK keyboard that is a modern product that uses IBM model f buckling spring keys in a Model M style housing. I also use a DELL P1110 as my main monitor. I have a plan to use a IBM PC 5150 as as USB-C docking station as well so my setup doesn't really suite modern gaming or productivity mice from companies such as Razor and Logitech. The closest I have been able to find and was using is the 8bitdo mouse coloured to look match their other NES accessories. However as shown it is not a perfect match and the red buttons don't really fit, instead of waiting and hoping that they release a IBM Model M colourway like they have with their mechanical keyboards I decided to get an older mouse that matches the keyboard.
+For a while now I have been wanting to use a more appropriate mouse with the other hardware I use in my main computer setup. This mainly consists of a FSSK keyboard that is a modern product that uses IBM model f buckling spring keys in a Model M style housing. I also use a DELL P1110 as my main monitor. I have a plan to use a IBM PC 5150 as a USB-C docking station as well so my setup doesn't really suit modern gaming or productivity mice from companies such as Razer and Logitech. The closest I have been able to find and was using is the 8bitdo mouse coloured to look match their other NES accessories. However as shown it is not a perfect match and the red buttons don't really fit, instead of waiting and hoping that they release a IBM Model M colourway like they have with their mechanical keyboards I decided to get an older mouse that matches the keyboard.
 
 ## IBM Mouse
 
-I managed to find this mouse on ebay that I think would match my setup well. There seem to be many Logitech branded mice that are identical so I'm guessing these are rebranded Logitech mice that IBM shipped with some of their machines. 
+I managed to find this mouse on eBay that I think would match my setup well. There seem to be many Logitech branded mice that are identical so I'm guessing these are rebranded Logitech mice that IBM shipped with some of their machines. 
 
 ![Bottom of the IBM mouse showing the ball for tracking.](/images/ibm-to-razor-mouse/IBM-bottom-before.JPG)
 
-The main issue with this mouse as shown in Figure 2 is that it is a ball tracking style mouse. This means that there is a small ball that rolls across the tracking surface. These mice tend to have low tracking resolution (atleast this one does) and can be unreliable on certain surfaces or when the ball becomes dirty. I did hook this mouse up using a PS/2 to USB converter and was able to get it working with my main machine, however the performance was appalling meaning that I couldn't stick with it. Unlike keyboards where you can get pretty old models still performing as well or sometimes better than modern counter parts this unfortunately is not the case with mouse technology.
+The main issue with this mouse as shown in Figure 2 is that it is a ball tracking style mouse. This means that there is a small ball that rolls across the tracking surface. These mice tend to have low tracking resolution (at least this one does) and can be unreliable on certain surfaces or when the ball becomes dirty. I did hook this mouse up using a PS/2 to USB converter and was able to get it working with my main machine, however the performance was appealing meaning that I couldn't stick with it. Unlike keyboards where you can get pretty old models still performing as well or sometimes better than modern counterparts this unfortunately is not the case with mouse technology.
 
 ![IBM ball mouse, probably manufatured by Logitech.](/images/ibm-to-razor-mouse/IBM-tr-before.JPG)
 
-As shown in Figure 3 the mouse also only has three buttons and lacks a scroll wheel this however is easily overcome in software as I will show later. 
+As shown in Figure 3 the mouse also only has three buttons and lacks a scroll wheel. This however is easily overcome in software as I will show later. 
 
 ## Razor Gaming Mouse
 
-Given the poor performance of older PS/2 roller ball mice and only being able to get modern mice in styles that clash with the rest of my equipment I decided to retrofit newer mouse internals into the IBM mouse. In order to do this I needed to find a mouse where the sensor roughly lined up with the position of the ball mouse opening, as I didn't want to make any external modifications to the IBM mouse. In order to do this I needed to be able to see the mice in person before buying, this limited my options for mouse brands as the only place I could think of that still exists to go and handle a large number of mice is the Razor store here in London. 
+Given the poor performance of older PS/2 roller ball mice and only being able to get modern mice in styles that clash with the rest of my equipment I decided to retrofit newer mouse internals into the IBM mouse. In order to do this I needed to find a mouse where the sensor roughly lined up with the position of the ball mouse opening, as I didn't want to make any external modifications to the IBM mouse. In order to do this I needed to be able to see the mice in person before buying, this limited my options for mouse brands as the only place I could think of that still exists to go and handle a large number of mice is the Razer store here in London. 
 
 ![Donor Razor Mouse.](/images/ibm-to-razor-mouse/razor-donor-mouse-before.JPG)
 
-After taking the IBM mouse to the store and comparing the sonsor positoning I decided to get the Razor Viper Pro 3, mainly because it had a high polling rate that worked wirelessly and wired along with what looked to be good spacing between the buttons and tracking sensor.
+After taking the IBM mouse to the store and comparing the sensor positioning I decided to get the Razer Viper Pro 3, mainly because it had a high polling rate that worked wirelessly and wired, along with what looked to be good spacing between the buttons and tracking sensor.
 
 ## Teardown
 
@@ -42,7 +42,7 @@ Firstly I disassembled the IBM mouse. In Figure 5 you can see the component part
 
 This however did leave me with one question given that the enoder wheels didn't seem to have any features that would allow the sensor to know in which direction it was rotating. However after a quick google I found this [answer](https://electronics.stackexchange.com/questions/15481/how-does-a-ball-mouse-know-the-direction), basically there are two light detectors per sensor offset in the horizontal axis, meaning that you can detect the direction of rotation by which of the sensors detects light first.
 
-After tearing down the IBM mouse is was the turn of the Razor mouse to be disassembled. This was also pretty easy although care needed to be taken as the upper and lower portion of the mouse contain their own PCBs connected by a ribbon cable. After disassembly I was able to extract the components needed for this project, shown in Figure 7.
+After tearing down the IBM mouse is was the turn of the Razor mouse to be disassembled. This was also pretty easy although care needed to be taken as the upper and lower portion of the mouse contain their own PCBs, connected by a ribbon cable. After disassembly I was able to extract the components needed for this project, shown in Figure 7.
 
 ![Extracted components from Razor mouse.](/images/ibm-to-razor-mouse/razor-teardown.JPG)
 

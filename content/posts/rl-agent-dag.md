@@ -1,5 +1,5 @@
 +++
-title = 'Rl Training Dag'
+title = 'RL Training DAG'
 date = 2021-01-11T21:06:01+00:00
 draft = false
 tags = ["Research", "Workflow"]
