@@ -368,7 +368,7 @@ figure {
     padding: 1em;
     margin: 0;
     background-color: var(--bg-highlight);
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 figure img {
