@@ -1,6 +1,6 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
+    {{ .Content }}
     <div class="dinoai-post-list">
       {{ range .Pages }}
       <div class="dinoai-post-list-item">
@@ -10,4 +10,5 @@
         </div>
       {{ end }}
     </div>
+   <a href="{{ .Permalink }}/index.xml" class="rss-link">RSS</a>
 {{ end }}
