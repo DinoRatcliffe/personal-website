@@ -316,7 +316,7 @@ a {
   text-transform: uppercase;
   font-family: 'Noto Serif JP';
   //font-family: 'berkeley-mono';
-  font-weight: bolder;
+  font-weight: 900;
   text-decoration: none;
   width: contain;
   flex: 0 0 auto;
