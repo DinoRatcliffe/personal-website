@@ -202,8 +202,10 @@ main.menu-open-initial {
 .dinoai-post-list .dots {
     overflow: hidden;
     flex: 0 1 auto;
-    padding: 0em 0.5em;
-    opacity: 0.1;
+    padding: 0em 2em;
+    opacity: 0.3;
+    font-size: 0.5em;
+    padding-top: 1em;
 }
 .dinoai-post-list .dots:before {
     display: block;
